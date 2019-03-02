@@ -13,13 +13,13 @@ package com.mycompany.doa;
 import com.mycompany.model.User;
 import java.util.List;
 import org.springframework.jdbc.core.JdbcTemplate;
-public class DataAccessLayer implements doaInterface  {
+public class UserDoa implements doaInterface  {
     private JdbcTemplate template;
     public void setTemplate(JdbcTemplate template ){
     this.template=template;
     }
     public void save(User user){
-    String sql="inser into user values("+ user.getUsername() + " , "+user.getPassword()+")";
+    String sql="insert into user values('"+ user.getUsername() + "' , "+user.getPassword()+")";
     template.execute(sql);
     }
 

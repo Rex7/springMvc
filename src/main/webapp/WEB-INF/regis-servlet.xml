@@ -16,6 +16,19 @@
   
     <!--Provide support for conversion, formatting and validation -->  
     <mvc:annotation-driven/>  
+  <bean id="id1" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+     <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/springmvc" />
+		<property name="username" value="root" />
+		<property name="password" value="Rex9821572187" />
+  </bean>
+
   
+  <bean id="id2" class="org.springframework.jdbc.core.JdbcTemplate">
+      <property name="dataSource" ref="id1"></property>
+  </bean>
+  <bean id="userDoa" class="com.mycompany.doa.UserDoa">
+      <property name="template" ref="id2"></property>
+  </bean>
 </beans>  
 
