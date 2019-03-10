@@ -28,12 +28,16 @@ public class AddController {
         boolean check=true;
         if(check){
             map.put("user", username);
-        return "display.jsp";
+        return "display";
         }
         
         else{
             map.put("error", "Invalid User login details");
-            return "index.jsp";
+            return "index";
         }
     }
+
+
+
+
 }

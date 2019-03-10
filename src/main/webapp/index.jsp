@@ -13,6 +13,7 @@
 <title>Hello</title>
 </head>
 <body>
+    <a href="homepage">Click for home</a>
     <form action="add">
        UserName :<input type="text" name="username"/><br>
       Password:  <input type="text" name="password"/><br>
