@@ -12,6 +12,13 @@
         <title>JSP Page</title>
     </head>
     <body>
+        <h1>Inventory System</h1>
         <h1>Welcome User ${user}</h1>
+        <form action="inventory">
+Product Name <input type="text" name="productName" ><br>
+Price:    <input type="text" name="price"><br>
+Quantity: <input type="text" name="quantity" ><br>
+<input type="submit" value="Submit">
+</form>
     </body>
 </html>
