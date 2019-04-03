@@ -10,6 +10,7 @@ package com.mycompany.doa;
  *
  * @author Regis charles
  */
+import com.mycompany.model.Inventory;
 import com.mycompany.model.User;
 import java.util.List;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -21,6 +22,14 @@ public class UserDoa implements doaInterface  {
     public void save(User user){
     String sql="insert into user values('"+ user.getUsername() + "' , "+user.getPassword()+")";
     template.execute(sql);
+    }
+       public void invest(Inventory inventory) {
+     String sql="insert into inventory (productName,price,quantity) values('"+inventory.getProductName()+"',"+inventory.getPrice()+","+inventory.getQuantity()+")";
+     template.execute(sql);
+    }
+
+    public int update(Inventory inventory) {
+return 0;
     }
 
   

@@ -11,7 +11,8 @@ package com.mycompany.model;
  */
 public class Inventory {
     private String productName;
-    private int price,quantity;
+    private int quantity;
+    private float price;
 
     public String getProductName() {
         return productName;
@@ -21,11 +22,11 @@ public class Inventory {
         this.productName = productName;
     }
 
-    public int getPrice() {
+    public float getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(float price) {
         this.price = price;
     }
 

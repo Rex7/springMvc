@@ -1,3 +1,4 @@
+
 <%-- 
     Document   : display
     Created on : 21 Feb, 2019, 9:38:25 AM
@@ -19,6 +20,7 @@
             Price:    <input type="text" name="price"><br>
             Quantity: <input type="text" name="quantity" ><br>
             <input type="submit" value="Submit">
+            <p>${message}</p>
         </form>
         <a href="mypage">click me</a>
     </body>

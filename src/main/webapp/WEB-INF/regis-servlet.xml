@@ -36,5 +36,6 @@
   <bean id="userDoa" class="com.mycompany.doa.UserDoa">
       <property name="template" ref="id2"></property>
   </bean>
+ 
 </beans>  
 
